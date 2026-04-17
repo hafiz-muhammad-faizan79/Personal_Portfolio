@@ -1,11 +1,10 @@
 export const personalInfo = {
   name: "Hafiz Muhammad Faizan",
   title: "BS Computer Science Student | ML & Leadership Focus",
-  email: "your-email@example.com",
-  github: "https://github.com/your-username",
-  linkedin: "https://linkedin.com/in/your-username",
-  resume: "/resume.pdf",
-};
+  email: "mf3321369@gmail.com",
+  github: "https://github.com/hafiz-muhammad-faizan79",
+  linkedin: "https://www.linkedin.com/in/mohammad-faizan-475741323?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+  resume: "/resume.pdf",};
 
 export const projects = [
   {
@@ -14,25 +13,25 @@ export const projects = [
     description:
       "Built and evaluated ML classification workflows with focus on SVMs, feature selection, and model performance analysis.",
     tags: ["Machine Learning", "SVM", "Model Evaluation"],
-    github: "https://github.com/your-username/ml-project",
+    github: "https://github.com/hafiz-muhammad-faizan79/ML-project-IDS",
     live: "",
   },
   {
     id: 2,
-    title: "Compiler Construction Project",
+    title: "Cucumber Framework automation scripts in SQA",
     description:
-      "Implemented core compiler concepts, including Syntax-Directed Definitions and semantic translation logic.",
+      "Implemented core java concepts, including Cucumber framework and BDD methodology, to run test scrips for software quality assurance.",
     tags: ["Compiler Construction", "SDD", "Theory to Implementation"],
-    github: "https://github.com/your-username/compiler-project",
+    github: "https://github.com/hafiz-muhammad-faizan79/Cucumber-framework",
     live: "",
   },
   {
     id: 3,
-    title: "Think2Code Tech Competition",
+    title: "CyGuardianX - Cybersecurity Awareness Initiative",
     description:
-      "Organized and executed a university-level coding competition, managing planning, operations, and participant flow.",
-    tags: ["Leadership", "Event Management", "Execution"],
-    github: "",
+      "Organized and executed a university-level Final year project , including intrusion detection and prevention system (IDS), helping ",
+    tags: ["Security", "Logs Management", "Execution"],
+    github: "https://github.com/hafiz-muhammad-faizan79/IDPS-FYP",
     live: "",
   },
 ];

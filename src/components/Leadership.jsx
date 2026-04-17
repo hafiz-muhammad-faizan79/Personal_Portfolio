@@ -3,15 +3,15 @@ import Reveal from "./Reveal";
 const leadershipItems = [
   {
     title: "President — ICC UCP (Spring 2026)",
-    desc: "Leading strategic planning, delegate development, and team execution after serving as Vice President.",
+    desc: "Leading strategic planning, delegate development, and team execution after serving as Vice President. Core strategies behind the successful 2025 season, including a 3rd place finish at FORMUN and multiple awards across circuits.",
   },
   {
     title: "Model United Nations Distinctions",
     desc: "Awarded Best Delegate and Outstanding Delegate across major MUN circuits including FORMUN and LGS.",
   },
   {
-    title: "VIS Community Campaign Lead",
-    desc: "Directed clothes collection campaign planning, sorting workflows, and distribution execution.",
+    title: "Sports indoor Community",
+    desc: "Co-founded a community of 100+ members focused on indoor sports, fostering camaraderie and promoting physical activity through regular events and tournaments. Including gym training and fitness challenges.",
   },
 ];
 
@@ -25,7 +25,7 @@ export default function Leadership() {
 
         <Reveal delay={0.08}>
           <p className="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
-            I lead with structure, communication, and accountability — from crisis chamber
+            I lead with structure, communication, and accountability — from International crisis chamber
             leadership to community service and cross-functional coordination.
           </p>
         </Reveal>
