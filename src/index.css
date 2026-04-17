@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+.blob {
+  position: absolute;
+  width: 34rem;
+  height: 34rem;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.22;
+  animation: floatBlob 14s ease-in-out infinite alternate;
+}
+.blob-one { top: -8rem; left: -8rem; background: #22d3ee; }
+.blob-two { top: 25%; right: -10rem; background: #6366f1; animation-delay: 2s; }
+.blob-three { bottom: -10rem; left: 35%; background: #a855f7; animation-delay: 4s; }
+
+@keyframes floatBlob {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(30px, -20px, 0) scale(1.08); }
+  100% { transform: translate3d(-25px, 25px, 0) scale(0.96); }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -5;
+  background: radial-gradient(circle at 50% 20%, transparent 0%, rgba(2, 6, 23, 0.18) 75%);
+}
+
+.orbit {
+  transform: translate(-50%, -50%) rotate(var(--angle));
+  animation: orbitSpin var(--speed) linear infinite;
+  animation-delay: var(--delay);
+  transform-origin: center;
+}
+
+.orbit .skill-pill {
+  display: inline-block;
+  transform: translateX(var(--radius)) rotate(calc(-1 * var(--angle)));
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(15, 23, 42, 0.42);
+  color: #dbeafe;
+  font-size: 0.9rem;
+  backdrop-filter: blur(6px);
+}
+
+@keyframes orbitSpin {
+  from {
+    transform: translate(-50%, -50%) rotate(var(--angle));
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(calc(var(--angle) + 360deg));
+  }
+}
+
+/* Light mode tweaks */
+:root .orbit .skill-pill {
+  background: rgba(255, 255, 255, 0.55);
+  color: #1e3a8a;
+  border-color: rgba(59, 130, 246, 0.25);
+}
+.dark .orbit .skill-pill {
+  background: rgba(15, 23, 42, 0.42);
+  color: #dbeafe;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Mobile scale */
+@media (max-width: 640px) {
+  .orbit .skill-pill {
+    font-size: 0.78rem;
+    padding: 0.24rem 0.55rem;
+  }
+}
+
+/* accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .orbit {
+    animation: none !important;
+  }
+}
