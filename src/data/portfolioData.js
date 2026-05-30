@@ -9,7 +9,7 @@ export const personalInfo = {
   title:    "CS Graduate · ICC UCP President · MUN Delegate",
   email:    "faizaniqbal179@gmail.com",
   github:   "https://github.com/hafiz-muhammad-faizan79",
-  linkedin: "https://linkedin.com/in/your-handle",  // update with real URL
+  linkedin: "https://linkedin.com/in/mohammad-faizan-475741323?utm_source=share_via&utm_content=profile&utm_medium=mem-ber_ios",  // update with real URL
   resume:   "/resume.pdf",                           // place your resume PDF in /public/
   location: "Lahore, Pakistan",
 };
